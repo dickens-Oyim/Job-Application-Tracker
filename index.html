@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyAjira</title>
+     <link rel="stylesheet" href="styles.css" />
+</head>
+</head>
+<body>
+    <header>
+    <h1>MyAjira</h1>
+    </header>
+    <input type="text" id="searchKeyword" placeholder="Search jobs by company or role" />
+        <button id="loadJobs">Load Jobs</button>
+        <form id="applicationForm">
+       <input type="text" id="company" placeholder="Company Name" required autocomplete="off" />
+        <input type="text" id="position" placeholder="Position" required autocomplete="off" />
+
+            <select id="status" required>
+                <option value="">Select Status</option>
+                <option value="Applied">Applied</option>
+                 <option value="Interview">Interview</option>
+                <option value="Offer">Offer</option>
+                <option value="Rejected">Rejected</option>
+            </select>
+            <button type="submit">Add Job</button>
+        </form>
+        
+        
+<div id="jobList">
+    <div id="data"></div>
+</div>
+  <script src="script.js"></script>
+</body>
+</html>

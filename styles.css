@@ -1,0 +1,142 @@
+/* Global Reset + Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #297575, #204d4a);
+  padding: 40px 20px;
+  color: #2e2e2e;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+/* Form Card */
+form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 25px;
+  border-radius: 12px;
+  max-width: 420px;
+  margin: 0 auto 30px auto;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+  width: 100%;
+  padding: 10px 12px;
+  margin-top: 10px;
+  margin-bottom: 18px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  transition: all 0.25s ease;
+  font-size: 14px;
+  background-color: #fafafa;
+}
+
+input:focus,
+select:focus {
+  border-color: #00796b;
+  background-color: #fff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 121, 107, 0.3);
+}
+
+/* Buttons */
+button {
+  width: 200px;
+  padding: 10px;
+  background: linear-gradient(135deg, #00796b, #009688);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #009688, #004d40);
+  transform: scale(1.05);
+}
+
+/* Search Section */
+#searchKeyword {
+  display: block;
+  width: 80%;
+  max-width: 600px;
+  margin: 20px auto 10px auto;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+/* Load Jobs Button */
+#loadJobs {
+  display: block;
+  margin: 10px auto 30px auto;
+}
+
+/* Job List Container */
+#jobList {
+  max-width: 700px;
+  margin: auto;
+}
+
+/* Job Card Styling (for dynamic content later) */
+#data > div {
+  background: white;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-left: 5px solid #00796b;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+#data > div:hover {
+  transform: translateX(5px);
+}
+
+/* Labels (if you add later) */
+label {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+/* Small screen responsiveness */
+@media (max-width: 500px) {
+  form {
+    padding: 20px;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  #searchKeyword {
+    width: 95%;
+  }
+}
