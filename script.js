@@ -19,7 +19,7 @@ form.addEventListener("submit", e => {
   // Get values entered in the form fields
   const company = document.getElementById("company").value;
   const position = document.getElementById("position").value;
-  const status = document.getElementById("status").value;
+  const status = document.getElementById("status").value; 
 
   // Append a new job application card to the job list container
   jobList.innerHTML += `
