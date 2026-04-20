@@ -10,6 +10,11 @@ body {
   background: linear-gradient(135deg, #297575, #204d4a);
   padding: 40px 20px;
   color: #2e2e2e;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Header */
@@ -126,7 +131,7 @@ label {
   display: block;
 }
 
-/* Small screen responsiveness */
+/* Small screen responsiveness
 @media (max-width: 500px) {
   form {
     padding: 20px;
@@ -139,4 +144,4 @@ label {
   #searchKeyword {
     width: 95%;
   }
-}
+} */

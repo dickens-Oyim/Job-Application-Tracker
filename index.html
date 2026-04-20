@@ -5,7 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyAjira</title>
      <link rel="stylesheet" href="styles.css" />
-</head>
+<style>
+.job-card {
+  border: 5px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 400px;
+  height: 200px;
+  color: black;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+</style>
 </head>
 <body>
     <header>
@@ -16,15 +30,15 @@
         <form id="applicationForm">
        <input type="text" id="company" placeholder="Company Name" required autocomplete="off" />
         <input type="text" id="position" placeholder="Position" required autocomplete="off" />
+        <input type="text" id="name" placeholder="Full Names" required autocomplete="off" />
+        <input type="text" id="email" placeholder="user email" required autocomplete="off" />
 
             <select id="status" required>
                 <option value="">Select Status</option>
-                <option value="Applied">Applied</option>
-                 <option value="Interview">Interview</option>
-                <option value="Offer">Offer</option>
-                <option value="Rejected">Rejected</option>
+                <option value="Apply">Apply</option>
+                <option value="Reject">Reject</option>
             </select>
-            <button type="submit">Add Job</button>
+            <button type="submit">proceed</button>
         </form>
         
         
